@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>DL</projectKey>
+    <exportDate>2022-11-23 13:26:09 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="70536077" key="DL-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mila Umehara</createdBy>
+            <createdOn>2022-11-23 12:44:10 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DL-6</key>
+                    <summary><![CDATA[Categorizar os produtos no menu]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Separar os produtos por categoria]]></name>
+            <objective><![CDATA[Criar categorias de produtos]]></objective>
+            <owner>630cfec6d8850343ef580673</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela principal
+And quer ver as opções apenas de um tipo de produto 
+When clicar em menu
+Then aparecerá todas as categorias de produto para o cliente selecionar]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="70536458" key="DL-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mila Umehara</createdBy>
+            <createdOn>2022-11-23 12:51:33 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DL-7</key>
+                    <summary><![CDATA[Incluir tamanhos e cores disponíveis dos produtos]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Incluir todas as opções de tamanho disponíveis para o mesmo produto]]></name>
+            <objective><![CDATA[Cadastrar e agrupar os tamanhos do mesmo produto]]></objective>
+            <owner>630cfec6d8850343ef580673</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given o cliente na tela do produto
+And deseja saber quais tamanhos existem para aquele produto
+When clicar no icone de tamanho
+Then aparecerá as opções existentes e disponíveis]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="70536678" key="DL-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mila Umehara</createdBy>
+            <createdOn>2022-11-23 12:56:06 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DL-7</key>
+                    <summary><![CDATA[Incluir tamanhos e cores disponíveis dos produtos]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Incluir todas as opções de cores disponíveis para o mesmo produto]]></name>
+            <objective><![CDATA[Cadastrar as cores de cada produto]]></objective>
+            <owner>630cfec6d8850343ef580673</owner>
+            <precondition><![CDATA[<p><br /></p>&nbsp; &nbsp; &nbsp;&nbsp;]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Clicar no produto]]></description>
+                        <expectedResult><![CDATA[Dever&aacute; aparecer todas as op&ccedil;&otilde;es de cores&nbsp;]]></expectedResult>
+                        <testData><![CDATA[&quot;Camiseta&quot;]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Ap&oacute;s clicar no produto e selecionar a cor]]></description>
+                        <expectedResult><![CDATA[Dever&aacute; aparecer a disponibilidade]]></expectedResult>
+                        <testData><![CDATA[&quot;vermelho&quot;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="70537146" key="DL-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mila Umehara</createdBy>
+            <createdOn>2022-11-23 13:04:51 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DL-6</key>
+                    <summary><![CDATA[Categorizar os produtos no menu]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Criar categorias de produtos]]></name>
+            <objective><![CDATA[Cadastrar e agrupar os itens para o menu]]></objective>
+            <owner>630cfec6d8850343ef580673</owner>
+            <precondition><![CDATA[<p>&nbsp;</p>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Clicar em &quot;Menu&quot;]]></description>
+                        <expectedResult><![CDATA[Dever&aacute; aparecer a op&ccedil;&atilde;o &quot;categorias&quot;]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Clicar em &quot;Menu&quot; e &quot;categorias&quot;]]></description>
+                        <expectedResult><![CDATA[Dever&aacute; aparecer uma lista de categorias (camisetas, bon&eacute;s, cal&ccedil;as, tenis)]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Clicar em &quot;Menu&quot;, &quot;categorias&quot;, e o item desejado]]></description>
+                        <expectedResult><![CDATA[Dever&aacute; aparecer a tela apenas com as op&ccedil;&otilde;es de camisetas&nbsp;]]></expectedResult>
+                        <testData><![CDATA[&quot;camisetas&quot;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
